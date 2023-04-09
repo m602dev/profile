@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="Cache-Control" content="no-cache">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+        <link rel="stylesheet" href="modal/modal-video.min.css" />
+        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+        <script type="text/javascript" src="modal/jquery-modal-video.min.js"></script>    
+        <title>@m602dev</title>
+    </head>
+    <style>
+        body {margin: 30px 0px;}        
+        li {list-style-type: none;}
+
+        section.main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        section.main img {
+            width: 150px;
+            height: 150px;
+            border-radius: 100%;
+            object-fit: cover;
+            border: 1px solid #21222b93;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+
+        section.main span {
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        section.main p {
+            margin-top: 0.5rem;
+            color: #94a1b2;
+            font-size: 13px;
+        }
+
+        section.main ul {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding-inline-start: 0px;
+        }
+
+        section.main ul li a {
+            color: #94a1b2;
+            margin: 20px 5px;
+            font-size: 25px;
+            padding: 5px;
+        }
+
+        section.main ul li a:hover {
+            transition: 0.2s all;
+            color: #fff;
+        }
+
+        .card-content {
+            margin-bottom: 1.5rem;
+            padding: 22px;
+            width: 350px;
+            background: #fff;
+            border-radius: 5px;
+            text-align: center;
+            box-shadow: 0 2px 5px #ccc;
+        }
+        .card-title {
+            font-size: 22px;
+            margin-bottom: 15px;
+            text-align: center;
+            color: #333;
+        }
+        .card-text {
+            line-height: 1.45;
+        }
+
+
+        .head-border {
+            position: relative;
+            display: inline-block;
+            padding: 0 65px;
+            margin: 20px 0;
+        }
+        
+        .head-border:before,
+        .head-border:after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            display: inline-block;
+            width: 50px;
+            height: 1px;
+            background-color: #666;
+        }
+        
+        .head-border:before {left: 0;}      
+        .head-border:after {right: 0;}
+    </style>
+    <body>  
+        <section class="main">
+            <img src="1.jpg" alt="" srcset="">
+            <span>@m602dev</span>
+            <p>15 years old(forever), Tenamonya developer.</p>
+            <ul>
+                <li><a target="_blank" href="https://discord.gg/"><i class="fab fa-discord"></i></a></li>
+                <li><a target="_blank" href="https://github.com/m602dev"><i class="fab fa-github"></i></a></li>
+                <li><a target="_blank" href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a></li>
+            </ul>
+            <div class="card-content">
+                <h1 class="card-title">about</h1>
+                <div style="display: flex; font-size: 14px; padding-bottom: 10px; margin: 5px 20px;">
+                    <div style="color: dimgray; letter-spacing: 0.3px; width: 90px;">1992.06</div>
+                    <div style="color: dimgray; letter-spacing: 1px;">東京都府中市生まれ</div>
+                </div>
+                <div style="display: flex; font-size: 14px; margin: 5px 20px;">
+                    <div style="color: dimgray; width: 90px;">2015.04-</div>
+                    <div style="color: dimgray;">東京 物流倉庫にて社内SE</div>
+                </div>       
+                <div style="display: flex; font-size: 14px; margin: 5px 20px;">
+                    <div style="color: dimgray; width: 90px;">2019.01-</div>
+                    <div style="color: dimgray;">山口 運送会社にて社内SE</div>
+                </div>                          
+                <div style="display: flex; font-size: 14px; margin: 5px 20px;">
+                    <div style="color: dimgray; width: 90px;">2019.12-</div>
+                    <div style="color: dimgray;">山口 地場IT会社にてPG/CD</div>
+                </div>         
+                <div style="display: flex; font-size: 14px; padding-bottom: 10px; margin: 5px 20px;">
+                    <div style="color: dimgray; width: 90px;">2021.12-</div>
+                    <div style="color: dimgray;">広島 販売会社にて社内SE</div>
+                </div>                                    
+                <p class="card-text">etc..</p>                  
+            </div>
+            <div class="card-content">
+                <h1 class="card-title">Skills</h1>
+                <div style="display: flex; font-size: 14px; margin: 5px 20px;">
+                    <div style="color: dimgray; width: 90px;">PG</div>
+                    <div style="color: dimgray;">VB, JS, PHP, C#</div>
+                </div>
+                <!--<div style="display: flex; font-size: 14px;  margin: 5px 20px;">
+                    <div style="color: dimgray; width: 90px;"></div>
+                    <div style="color: dimgray;">JS</div>
+                </div>                             
+                <div style="display: flex; font-size: 14px; margin: 5px 20px;">
+                    <div style="color: dimgray; width: 90px;"></div>
+                    <div style="color: dimgray;">php</div>
+                </div>    
+                <div style="display: flex; font-size: 14px; margin: 5px 20px;">
+                    <div style="color: dimgray; width: 90px;"></div>
+                    <div style="color: dimgray;">C#</div>
+                </div>-->
+                <div style="display: flex; font-size: 14px; margin: 5px 20px;">
+                    <div style="color: dimgray; width: 90px;">Tool</div>
+                    <div style="color: dimgray;">MySQL, Node.js, GAS</div>
+                </div>      
+                <div style="display: flex; font-size: 14px; padding-bottom: 15px; margin: 5px 20px;">
+                    <div style="color: dimgray; width: 90px;"></div>
+                    <div style="color: dimgray;">PAD(RPA), WordPress</div>
+                </div>                                                       
+                <div style="display: flex; font-size: 14px; margin: 5px 20px;">
+                    <div style="color: dimgray; width: 90px;">物流</div>
+                    <div style="color: dimgray;">運行管理者（貨物）</div>
+                </div>                 
+                <div style="display: flex; font-size: 14px; padding-bottom: 10px; margin: 5px 20px;">
+                    <div style="color: dimgray; width: 90px;"></div>
+                    <div style="color: dimgray;">フォークリフト運転免許</div>
+                </div>                                     
+                <div style="display: flex; font-size: 14px; margin: 5px 20px;">
+                    <div style="color: dimgray; width: 90px;">ほか</div>
+                    <div style="color: dimgray;">映像音響技術者</div>
+                </div>            
+                <div style="display: flex; font-size: 14px; margin: 5px 20px;">
+                    <div style="color: dimgray; width: 90px;"></div>
+                    <div style="color: dimgray;">家電アドバイザー</div>
+                </div>                  
+                <div style="display: flex; font-size: 14px; padding-bottom: 5px; margin: 5px 20px;">
+                    <div style="color: dimgray; width: 90px;"></div>
+                    <div style="color: dimgray;">平成初期文化研究</div>
+                </div>                                                     
+                <p class="card-text">etc..</p>  
+            </div>     
+            	
+            <h2 class="head-border">products</h2>
+            <div class="card-content">
+                <h1 class="card-title">Web app</h1>
+                <div style="font-size: 14px; margin: 3px 20px;">
+                    <div style="color: dimgray; margin: 6px 0;">受注入力フォーム</div>
+                    <div style="color: dimgray; margin: 6px 0;">帳票作成・編集</div>  
+                    <div style="color: dimgray; margin: 6px 0;">カレンダー出力</div>                  
+                    <div style="color: dimgray; margin: 6px 0;">RESTAPI/Ajaxによるデータ連携</div>                               
+                </div>                                 
+                <p class="card-text">etc..</p>  
+            </div>              
+            <div class="card-content">
+                <h1 class="card-title">LINE Business</h1>
+                <div style="margin: 15px;">
+                    <!--<div class="js-modal-video" data-video-id="fsCj9NBMmxY" style="border-radius: 12%; border: 1px solid #21222b93; width: 90px; margin: auto;">Demo</div>-->
+                    <div onclick="alert('Comming Soon')" style="border-radius: 12%; border: 1px solid #21222b93; width: 90px; margin: auto;">Demo</div>
+                </div>
+                <div style="font-size: 14px; margin: 3px 20px;">
+                    <div style="color: dimgray; margin: 6px 0;">モバイルオーダー</div>
+                    <div style="color: dimgray; margin: 6px 0;">BtoCメッセージ機能</div> 
+                    <div style="color: dimgray; margin: 6px 0;">デジタル会員証システム</div>
+                    <div style="color: dimgray; margin: 6px 0;">順番待ちシステム</div>
+                    <div style="color: dimgray; margin: 6px 0;">テーブルオーダー</div> 
+                    <div style="color: dimgray; margin: 6px 0;">雨の日クーポンの自動配布</div>
+                    <div style="color: dimgray; margin: 6px 0;">イベント自動告知</div>                    
+                    <div style="color: dimgray; margin: 6px 0;">よくある質問の自動応答</div>         
+                </div>                                               
+                <p class="card-text">etc..</p>  
+            </div>                      
+            <div class="card-content">
+                <h1 class="card-title">Google Apps</h1>
+                <div style="margin: 15px;">
+                    <!--<div class="js-modal-video" data-video-id="5cDD2TsRenk" style="border-radius: 12%; border: 1px solid #21222b93; width: 90px; margin: auto;">Demo</div>-->
+                    <div onclick="alert('Comming Soon')" style="border-radius: 12%; border: 1px solid #21222b93; width: 90px; margin: auto;">Demo</div>
+                </div>
+                <div style="font-size: 14px; margin: 3px 20px;">
+                    <div style="display: flex; font-size: 14px; margin: 5px 10px;">
+                        <div style="color: dimgray; width: 90px;">Gmail</div>
+                        <div style="color: dimgray;">メールのデータ収集</div>                        
+                    </div>          
+                    <div style="display: flex; font-size: 14px; margin: 5px 10px;">
+                        <div style="color: dimgray; width: 90px;"></div>
+                        <div style="color: dimgray;">定期送信システム</div>                        
+                    </div>                             
+                    <div style="display: flex; font-size: 14px; margin: 5px 10px;">
+                        <div style="color: dimgray; width: 90px;">カレンダー</div>
+                        <div style="color: dimgray;">外部連携・自動登録</div>                                                 
+                    </div>                       
+                    <div style="display: flex; font-size: 14px; margin: 5px 10px;">
+                        <div style="color: dimgray; width: 90px;">ドライブ</div>
+                        <div style="color: dimgray;">外部連携・同期</div>                        
+                    </div>     
+                    <div style="display: flex; font-size: 14px; margin: 5px 10px;">
+                        <div style="color: dimgray; width: 90px;">スプレッド</div>
+                        <div style="color: dimgray;">外部連携・同期</div>
+                    </div>                
+                    <div style="display: flex; font-size: 14px; margin: 5px 10px;">
+                        <div style="color: dimgray; width: 90px;">フォーム</div>
+                        <div style="color: dimgray;">外部連携・同期</div> 
+                    </div>                                        
+                    <div style="display: flex; font-size: 14px; padding-bottom: 5px; margin: 5px 10px;">
+                        <div style="color: dimgray; width: 90px;">スライド</div>
+                        <div style="color: dimgray;">外部連携・同期</div>
+                    </div>                         
+                    <div style="color: dimgray; margin: 6px 0;">各種LINEシステムとの連携</div>                    
+                </div>                                                          
+                <p class="card-text">etc..</p>  
+            </div>                            
+        </section>     
+    </body>
+    <script>
+        (function () {
+            if ($(".js-modal-video").length) { //クラス名js-modal-videoがあれば以下を実行
+                $(".js-modal-video").modalVideo({
+                channel: "youtube",
+                youtube: {
+                    rel: 0, //関連動画の指定
+                    autoplay: 0, //自動再生の指定
+                },
+                });
+            }
+        })();        
+    </script>    
+</html>
