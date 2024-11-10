@@ -7,9 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
-        <link rel="stylesheet" href="modal/modal-video.min.css" />
         <script type="text/javascript" src="//cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
-        <script type="text/javascript" src="modal/jquery-modal-video.min.js"></script>    
         <title>@m602dev</title>
     </head>
     <style>
@@ -23,7 +21,7 @@
             justify-content: center;
         }
 
-        section.main img {
+        .me {
             width: 150px;
             height: 150px;
             border-radius: 100%;
@@ -42,6 +40,7 @@
             margin-top: 0.5rem;
             color: #94a1b2;
             font-size: 13px;
+            text-align: center;
         }
 
         section.main ul {
@@ -84,7 +83,6 @@
             line-height: 1.45;
         }
 
-
         .head-border {
             position: relative;
             display: inline-block;
@@ -102,188 +100,228 @@
             height: 1px;
             background-color: #666;
         }
+
+        .card_tit{
+            font-size: 165%;
+            margin: 5vh 0vh 3vh 0vh;
+            font-weight: bold;
+        }
         
         .head-border:before {left: 0;}      
         .head-border:after {right: 0;}
+
+        .card_display{height: 15vh;}
+
+        .card-content{
+            opacity: 0;
+        }
+
+        .is-active {
+            /*要素を表示させる*/
+            opacity: 1;
+            visibility: visible;
+            /*元の位置に戻す*/
+            transform: translateY(0px);
+            transition: 1.5s;
+        }
     </style>
     <body>  
+
         <section class="main">
-            <img src="1.jpg" alt="" srcset="">
+            <img class="me" src="me.png" alt="" srcset="">
             <span>@m602dev</span>
-            <p>15 years old(forever), Tenamonya developer.</p>
+            <p>Yamazaki Masahiro<br>System Engineer</p>
+            <!--
             <ul>
                 <li><a target="_blank" href="https://twitter.com/m602dev"><i class="fab fa-twitter"></i></a></li>
                 <li><a target="_blank" href="https://github.com/m602dev"><i class="fab fa-github"></i></a></li>
                 <li><a target="_blank" href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a></li>
             </ul>
-            <div class="card-content">
-                <h1 class="card-title">about</h1>
-                <div style="display: flex; font-size: 14px; padding-bottom: 10px; margin: 5px 20px;">
-                    <div style="color: dimgray; letter-spacing: 0.3px; width: 90px;">1992.06</div>
-                    <div style="color: dimgray; letter-spacing: 1px;">東京都府中市生まれ</div>
+            -->
+            <h2 class="head-border">tech</h2>  
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-4">
+                        <div class="mx-auto card-content">
+                            <h1 class="card-title">with LINE</h1>
+                            <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQocw-DjIQtL9sA1QTnxjX94mAdCr11OEC0lYmysG9xJf5dnDkY782SRsgX59MwKUkyPw2Q7kILoVew/embed?start=false&loop=false&delayms=15000" frameborder="0" width="100%" height="210" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+                        </div>            
+                    </div>
+                    <div class="col-xl-4">
+                        <div class="mx-auto card-content">
+                            <h1 class="card-title">with Google</h1>
+                            <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQVIMk__gaogwRqFrFzDmywPjxsFW-KnCfY6pw8L3iFG_jSXaJtvrRsj3yHB6VVxUW2fGufkeA2Et63/embed?start=false&loop=false&delayms=60000" frameborder="0" width="100%" height="210" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+                        </div>    
+                    </div>
+                    <div class="col-xl-4">
+                        <div class="mx-auto card-content">
+                            <h1 class="card-title">Systems</h1>
+                            <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSEyhJs_0s78zkCMDxPXrRbyZtnhPtFH6ffx87GMYQbMsIQgjlTnQj3fHb1F8UV_m6o5N2Kf4MJsalz/embed?start=false&loop=false&delayms=3000" frameborder="0" width="100%" height="210" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+                        </div>    
+                    </div>
                 </div>
-                <div style="display: flex; font-size: 14px; margin: 5px 20px;">
-                    <div style="color: dimgray; width: 90px;">2015.04-</div>
-                    <div style="color: dimgray;">東京 物流倉庫にて社内SE</div>
-                </div>       
-                <div style="display: flex; font-size: 14px; margin: 5px 20px;">
-                    <div style="color: dimgray; width: 90px;">2019.01-</div>
-                    <div style="color: dimgray;">山口 運送会社にて社内SE</div>
-                </div>                          
-                <div style="display: flex; font-size: 14px; margin: 5px 20px;">
-                    <div style="color: dimgray; width: 90px;">2019.12-</div>
-                    <div style="color: dimgray;">山口 地場IT会社にてPG/CD</div>
-                </div>         
-                <div style="display: flex; font-size: 14px; padding-bottom: 10px; margin: 5px 20px;">
-                    <div style="color: dimgray; width: 90px;">2021.12-</div>
-                    <div style="color: dimgray;">広島 販売会社にて社内SE</div>
-                </div>                                    
-                <p class="card-text">etc..</p>                  
             </div>
-            <div class="card-content">
-                <h1 class="card-title">Skills</h1>
-                <div style="display: flex; font-size: 14px; margin: 5px 20px;">
-                    <div style="color: dimgray; width: 90px;">PG</div>
-                    <div style="color: dimgray;">VB, JS, PHP, C#</div>
+            <span style="margin: 50px 0px;"></span>
+            <h2 class="head-border">portfolio</h2>           
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-4">
+                        <div class="mx-auto card-content">
+                            <div class="card_display">
+                                <p><img style="margin: 1.5vh 0vh 3vh 0vh; width: 90%;" src="./sms.png"></p>
+                            </div>
+                            <p style="color: dimgray;">8cmCDや7インチレコードなど<br>小さなレコードをメインにしたレコード屋です</p>
+                            <button type="button" class="btn btn-primary" onclick="window.open('https://8cmcd.xii.jp/');">ブランドページへ</button>
+                            <li style="margin-top: 1rem;"><a target="_blank" href="https://x.com/m602hc"><i class="fab fa-twitter"></i>@m602hc</a></li>
+                        </div>            
+                    </div>
+                    <div class="col-xl-4">
+                        <div class="mx-auto card-content">
+                            <div class="card_display">
+                                <label class="card_tit">異土物語</label>
+                            </div>
+                            <p style="color: dimgray;">「人間の本質は夢によって表れる」をテーマした創作物<br>夢によって表れる現実、異土での物語を展開する。</p>
+                            <button type="button" class="btn btn-primary" onclick="window.open('https://8cmcd.xii.jp/');">概要ページへ</button>
+                            <p>外部サイトへ移動します</p>                           
+                        </div>    
+                    </div>
+                    <div class="col-xl-4">
+                        <div class="mx-auto card-content">
+                            <div class="card_display">
+                                <label class="card_tit">路上アーカイブス</label>
+                            </div>
+                            <p style="color: dimgray;">「路上をアーカイブする活動。<br>路上の時間空間と無常観の表出を図る。</p>    
+                            <button type="button" class="btn btn-primary" onclick="window.open('https://8cmcd.xii.jp/');">概要ページへ</button>
+                            <p>外部サイトへ移動します</p> 
+                        </div>            
+                    </div>
                 </div>
-                <div style="display: flex; font-size: 14px; margin: 5px 20px;">
-                    <div style="color: dimgray; width: 90px;">Libs</div>
-                    <div style="color: dimgray;">Node.js, Vue.js, Bootstrap</div>
-                </div>                  
-                <!--<div style="display: flex; font-size: 14px;  margin: 5px 20px;">
-                    <div style="color: dimgray; width: 90px;"></div>
-                    <div style="color: dimgray;">JS</div>
-                </div>                             
-                <div style="display: flex; font-size: 14px; margin: 5px 20px;">
-                    <div style="color: dimgray; width: 90px;"></div>
-                    <div style="color: dimgray;">php</div>
-                </div>    
-                <div style="display: flex; font-size: 14px; margin: 5px 20px;">
-                    <div style="color: dimgray; width: 90px;"></div>
-                    <div style="color: dimgray;">C#</div>
-                </div>-->
-                <div style="display: flex; font-size: 14px; margin: 5px 20px;">
-                    <div style="color: dimgray; width: 90px;">Tool</div>
-                    <div style="color: dimgray;">MySQL, GAS</div>
-                </div>      
-                <div style="display: flex; font-size: 14px; padding-bottom: 15px; margin: 5px 20px;">
-                    <div style="color: dimgray; width: 90px;"></div>
-                    <div style="color: dimgray;">PAD(RPA), WordPress</div>
-                </div>                                                       
-                <div style="display: flex; font-size: 14px; margin: 5px 20px;">
-                    <div style="color: dimgray; width: 90px;">物流</div>
-                    <div style="color: dimgray;">運行管理者（貨物）</div>
-                </div>                 
-                <div style="display: flex; font-size: 14px; padding-bottom: 10px; margin: 5px 20px;">
-                    <div style="color: dimgray; width: 90px;"></div>
-                    <div style="color: dimgray;">フォークリフト運転免許</div>
-                </div>                                     
-                <div style="display: flex; font-size: 14px; margin: 5px 20px;">
-                    <div style="color: dimgray; width: 90px;">ほか</div>
-                    <div style="color: dimgray;">映像音響技術者</div>
-                </div>            
-                <div style="display: flex; font-size: 14px; margin: 5px 20px;">
-                    <div style="color: dimgray; width: 90px;"></div>
-                    <div style="color: dimgray;">家電アドバイザー</div>
-                </div>                  
-                <div style="display: flex; font-size: 14px; padding-bottom: 5px; margin: 5px 20px;">
-                    <div style="color: dimgray; width: 90px;"></div>
-                    <div style="color: dimgray;">平成初期文化研究</div>
-                </div>                                                     
-                <p class="card-text">etc..</p>  
-            </div>                	
-            <h2 class="head-border">tech</h2>           
-            <div class="card-content">
-                <h1 class="card-title">LINE販促システム</h1>
-                <div style="margin: 15px;">
-                    <!--<div class="js-modal-video" data-video-id="fsCj9NBMmxY" style="border-radius: 12%; border: 1px solid #21222b93; width: 90px; margin: auto;">Demo</div>-->
-                    <div onclick="location.href = 'https://sites.google.com/view/line-m602dev/home'" style="border-radius: 12%; border: 1px solid #21222b93; width: 150px; margin: auto;">site</div>
-                    <!--<div style="margin: 15px;"></div>
-                    <div onclick="location.href = 'https://qiita.com/m602dev'" style="border-radius: 12%; border: 1px solid #21222b93; width: 150px; margin: auto;">article (Qiita)</div>-->
+            </div>
+            <span style="margin: 50px 0px;"></span>
+            <h2 class="head-border">about me</h2>           
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-4">
+                        <div class="mx-auto card-content">
+                            <h1 class="card-title">History</h1>
+                            <div style="display: flex; font-size: 14px; padding-bottom: 10px; margin: 5px 20px;">
+                                <div style="color: dimgray; letter-spacing: 0.3px; width: 90px;">1992.06</div>
+                                <div style="color: dimgray; letter-spacing: 1px;">東京都府中市生まれ</div>
+                            </div>
+                            <div style="display: flex; font-size: 14px; margin: 5px 20px;">
+                                <div style="color: dimgray; width: 90px;">2015.04-</div>
+                                <div style="color: dimgray;">東京 物流倉庫にて社内SE</div>
+                            </div>       
+                            <div style="display: flex; font-size: 14px; margin: 5px 20px;">
+                                <div style="color: dimgray; width: 90px;">2019.01-</div>
+                                <div style="color: dimgray;">山口 運送会社にて社内SE</div>
+                            </div>                          
+                            <div style="display: flex; font-size: 14px; margin: 5px 20px;">
+                                <div style="color: dimgray; width: 90px;">2019.12-</div>
+                                <div style="color: dimgray;">山口 地場IT会社にてPG/CD</div>
+                            </div>         
+                            <div style="display: flex; font-size: 14px; padding-bottom: 10px; margin: 5px 20px;">
+                                <div style="color: dimgray; width: 90px;">2021.12-</div>
+                                <div style="color: dimgray;">広島 販売会社にて社内SE</div>
+                            </div>        
+                            <div style="display: flex; font-size: 14px; margin: 5px 20px;">
+                                <div style="color: dimgray; width: 90px;">2024.9-</div>
+                                <div style="color: dimgray;">小さなレコード屋を開業（兼業）</div>
+                            </div>  
+                            <div style="display: flex; font-size: 14px; margin: 5px 20px;">
+                                <div style="color: dimgray; width: 90px;">2024.9-</div>
+                                <div style="color: dimgray;">個人事業準備（屋号mio）</div>
+                            </div>                              
+                            <p class="card-text">etc..</p>  
+                        </div>            
+                    </div>
+                    <div class="col-xl-4">
+                        <div class="mx-auto card-content">
+                            <h1 class="card-title">Skills</h1>
+                            <div style="display: flex; font-size: 14px; margin: 5px 20px;">
+                                <div style="color: dimgray; width: 90px;">PG</div>
+                                <div style="color: dimgray;">VB, JS, PHP, C#</div>
+                            </div>
+                            <div style="display: flex; font-size: 14px; margin: 5px 20px;">
+                                <div style="color: dimgray; width: 90px;">Libs</div>
+                                <div style="color: dimgray;">Node.js, Vue.js, Bootstrap</div>
+                            </div>                  
+                            <div style="display: flex; font-size: 14px; margin: 5px 20px;">
+                                <div style="color: dimgray; width: 90px;">Tool</div>
+                                <div style="color: dimgray;">MySQL, GAS</div>
+                            </div>      
+                            <div style="display: flex; font-size: 14px; padding-bottom: 15px; margin: 5px 20px;">
+                                <div style="color: dimgray; width: 90px;"></div>
+                                <div style="color: dimgray;">PAD(RPA), WordPress</div>
+                            </div>                                                       
+                            <div style="display: flex; font-size: 14px; margin: 5px 20px;">
+                                <div style="color: dimgray; width: 90px;">物流</div>
+                                <div style="color: dimgray;">運行管理者（貨物）</div>
+                            </div>                 
+                            <div style="display: flex; font-size: 14px; padding-bottom: 10px; margin: 5px 20px;">
+                                <div style="color: dimgray; width: 90px;"></div>
+                                <div style="color: dimgray;">フォークリフト運転免許</div>
+                            </div>                                     
+                            <div style="display: flex; font-size: 14px; margin: 5px 20px;">
+                                <div style="color: dimgray; width: 90px;">ほか</div>
+                                <div style="color: dimgray;">映像音響技術者</div>
+                            </div>            
+                            <div style="display: flex; font-size: 14px; margin: 5px 20px;">
+                                <div style="color: dimgray; width: 90px;"></div>
+                                <div style="color: dimgray;">家電アドバイザー</div>
+                            </div>                  
+                            <div style="display: flex; font-size: 14px; padding-bottom: 5px; margin: 5px 20px;">
+                                <div style="color: dimgray; width: 90px;"></div>
+                                <div style="color: dimgray;">平成初期文化研究</div>
+                            </div>                                                     
+                            <p class="card-text">etc..</p>  
+                        </div>    
+                    </div>
+                    <div class="col-xl-4">
+                        <div class="mx-auto card-content">
+                            <h1 class="card-title">Links</h1>
+                            <div style="display: flex; font-size: 14px; margin: 5px 20px;">
+                                <div style="color: dimgray; width: 90px;"><li><i class="fa-solid fa-envelope" style="font-size: 110%; color: dimgray;"></i></li></div>
+                                <div style="color: dimgray;"><a href="mailto:m602dev@gmail.com" style="color:inherit">m602dev@gmail.com</a></div>
+                            </div>
+                            <div style="display: flex; font-size: 14px; margin: 15px 20px;">
+                                <div style="color: dimgray; width: 90px;"><li><i class="fa-brands fa-line" style="font-size: 110%; color: dimgray;"></i></li></div>
+                                <div style="color: dimgray;"><a href="https://lin.ee/rTGk8yt" target="_blank" style="color:inherit">@222godqv</a></div>
+                            </div>      
+                            <div style="display: flex; font-size: 14px; margin: 10px 20px;">
+                                <div style="color: dimgray; width: 90px;"><li><i class="fa-regular fa-file-lines" style="font-size: 110%; color: dimgray;"></i></li></div>
+                                <div style="color: dimgray;"><a href="https://note.com/m602dev/" target="_blank" style="color:inherit">note (@m602dev)</a></div>
+                            </div>                                                  
+                        </div>
+                    </div>
                 </div>
-                <div style="font-size: 16px; margin: 3px 20px;">
-                    <div style="color: dimgray; margin: 6px 0;">モバイルオーダー</div>                  
-                    <div style="color: dimgray; margin: 6px 0;">問い合わせシステム</div> 
-                    <div style="color: dimgray; margin: 6px 0;">順番待ちシステム</div>
-                    <p style="color: dimgray; margin: 6px 0; font-size: 16px;"><a href="https://qiita.com/m602dev/items/a0ede04f523648159b9d" style="color:inherit">デジタル会員証システム</a></p>  
-                    <p style="color: dimgray; margin: 6px 0; font-size: 16px;"><a href="https://qiita.com/m602dev/items/cdcce8839960f6c6a31e" style="color:inherit">雨の日クーポンの自動配布</a></p>
-                    <p style="color: dimgray; margin: 6px 0; font-size: 16px;"><a href="https://qiita.com/m602dev/items/ea3ecb77234adf80ce53" style="color:inherit">イベント自動告知</a></p>   
-                    <div style="color: dimgray; margin: 6px 0;">よくある質問の自動応答</div>         
-                </div>                                               
-                <p class="card-text">etc..</p>  
-            </div>       
-            <div class="card-content">
-                <h1 class="card-title">Web app</h1>            
-                <!--<p style="color: dimgray; margin: 6px 0; font-size: 8px;">Click to Demo site</p>-->
-                <div style="font-size: 15px; margin: 3px 20px;">
-                    <p style="color: dimgray; margin: 6px 0; font-size: 16px;"><a href="https://m602dev.github.io/form/" style="color:inherit">入力フォーム</a></p>          
-                    <p style="color: dimgray; margin: 6px 0; font-size: 16px;"><a href="https://m602dev.github.io/form/editable/" style="color:inherit">帳票表示・編集(Vue.js)</a></p>                           
-                    <p style="color: dimgray; margin: 6px 0; font-size: 16px;"><a href="https://m602dev.github.io/Calendar/" style="color:inherit">カレンダー出力</a></p>                 
-                    <div style="color: dimgray; margin: 6px 0;">RESTAPI/Ajaxによるデータ連携</div>                               
-                </div>                                 
-                <p class="card-text">etc..</p>  
-            </div>   
-            <h2 class="head-border">shop</h2>
-            <div class="card-content">
-                <h1 class="card-title">8cmCD図鑑</h1>
-                <p class="card-text">8cmCDのコレクションと販売</p>  
-                <div style="margin: 25px;">
-                    <!--<div class="js-modal-video" data-video-id="fsCj9NBMmxY" style="border-radius: 12%; border: 1px solid #21222b93; width: 90px; margin: auto;">Demo</div>-->
-                    <div onclick="location.href = 'https://m602dev.sakura.ne.jp/8c/index.php'" style="border-radius: 12%; border: 1px solid #21222b93; width: 150px; margin: auto;">site</div>
-                </div>                           
-            </div>     
-            <div class="card-content">
-                <h1 class="card-title">min.</h1>
-                <p class="card-text">雑貨もレコードもミニマムなお店</p>  
-                <div onclick="location.href = 'https://m602dev.sakura.ne.jp/shop/index.html'" style="border-radius: 12%; border: 1px solid #21222b93; width: 150px; margin: auto;">site</div>                       
-            </div>   
-            <h2 class="head-border">art</h2>
-            <div class="card-content">
-                <h1 class="card-title">異土物語(Ido)</h1>
-                <div style="margin: 25px;">
-                    <div onclick="location.href = 'https://m602web.notion.site/Ido-4a559088d1294d32aaeb44f75381047a?pvs=74'" style="border-radius: 12%; border: 1px solid #21222b93; width: 150px; margin: auto;">site</div>
-                </div>
-                <!--<div style="font-size: 14px; margin: 3px 20px;">
-                    <div style="color: dimgray; margin: 6px 0;">無常観より</div>
-                    <div style="color: dimgray; margin: 6px 0;">共時性より</div>                    
-                    <div style="color: dimgray; margin: 6px 0;">夢幻能より</div>              
-                    <div style="color: dimgray; margin: 6px 0;">超現実より</div>                               
-                </div>-->      
-            </div>  
-            <div class="card-content">
-                <h1 class="card-title">路上アーカイブス</h1>
-                <div style="margin: 25px;">
-                    <!--<div class="js-modal-video" data-video-id="fsCj9NBMmxY" style="border-radius: 12%; border: 1px solid #21222b93; width: 90px; margin: auto;">Demo</div>-->
-                    <div onclick="location.href = 'https://www.instagram.com/rojou_archives/'" style="border-radius: 12%; border: 1px solid #21222b93; width: 150px; margin: auto;">instagram</div>
-                    <!--
-                    <div onclick="location.href = 'https://sites.google.com/view/rojou-archives'" style="border-radius: 12%; border: 1px solid #21222b93; width: 150px; margin: auto;">site</div>
-                    <div style="margin: 15px;"></div>
-                    <div onclick="location.href = 'https://www.youtube.com/@JapaneseStreetDiary_test'" style="border-radius: 12%; border: 1px solid #21222b93; width: 150px; margin: auto;">youtube</div>
-                    -->
-                </div>                        
-            </div>    
-            <h2 class="head-border">hobby</h2>  
-            <div class="card-content">
-                <h1 class="card-title">全国ショッピングモール巡り</h1>
-                <div style="margin: 25px;">
-                    <!--<div class="js-modal-video" data-video-id="fsCj9NBMmxY" style="border-radius: 12%; border: 1px solid #21222b93; width: 90px; margin: auto;">Demo</div>-->
-                    <div onclick="location.href = 'https://www.google.com/maps/d/edit?mid=1rFGpbBafBZI4wnXnYPlCrnvCGLN7i_A&usp=sharing'" style="border-radius: 12%; border: 1px solid #21222b93; width: 150px; margin: auto;">Enter</div>
-                </div>                           
-            </div>  
+            </div>
         </section>     
-        <p style="text-align: center; margin: 30px;"><a href="mailto:m602dev@gmail.com" style="color:inherit">m602dev@gmail.com</a></p>
+        <div style="text-align: center; margin-top: 5rem;"><label>produced by mio</label></div>
     </body>
     <script>
-        (function () {
-            if ($(".js-modal-video").length) { //クラス名js-modal-videoがあれば以下を実行
-                $(".js-modal-video").modalVideo({
-                channel: "youtube",
-                youtube: {
-                    rel: 0, //関連動画の指定
-                    autoplay: 0, //自動再生の指定
-                },
-                });
-            }
-        })();        
-    </script>    
+        window.onload = isActive();
+        window.addEventListener('scroll', function(){isActive();});
+
+        function isActive(){
+
+            // スクロール量を取得
+            const scroll = window.scrollY;
+            // 画面の高さを取得
+            const windowHeight = window.innerHeight;
+            // すべての.boxを取得
+            const boxes = document.querySelectorAll('.card-content');
+            
+            boxes.forEach(function(box) {
+
+                // boxまでの高さを取得
+                const distanceToBox = box.offsetTop;
+                // 下記条件が成り立つときだけboxにis-activeクラスを付与する
+                if(scroll + windowHeight > distanceToBox) {
+                    box.classList.add('is-active');
+                }
+            });
+        }
+    </script>   
+    <script src="https://kit.fontawesome.com/b767faa4d6.js" crossorigin="anonymous"></script> 
 </html>
